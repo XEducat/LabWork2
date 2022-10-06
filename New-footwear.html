@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Магазин взуття</title>
+   <style>
+    p{
+      font-size: 14pt;
+      font-family: FreeMono, monospace;
+     }
+    textarea{
+      width: 50%;
+      height: 200px;
+      resize: none;
+     }
+    button{
+      width: 150pt;
+      height: 40pt;
+     }
+    .Shoe_Add{
+      position: absolute; 
+      top:925px;  
+      left:320px;   
+     }
+    .Exit{
+      position: absolute; 
+      top:925px;  
+      left:560px;
+     }
+   </style>
+   <script>
+    function ClosePageCreator(){
+      window.location.href = "MainMenu.html";
+    }
+   </script>
+ </head>
+ <body bgcolor="#e9ecf0">
+  <font size = "9", color = "#1db374"><center>Інтернет магазин взуття</center></font><hr> <br>
+  <font size = "5",><center><b>Добалення нового взуття в каталог</b></center></font> <br>
+  <p>Назва:<br>
+   <input type="text" size="40", name = "Shoe_Name">
+  </p>
+  <p>Код:<br>
+   <input type="text", name = "Shoe_Code">
+  </p>
+  <p>Ціна(грн):<br>
+   <input type="number", name = "Shoe_Price">
+  </p>
+  <p>Опис:</p>
+  <p><textarea name="Shoe_Image"></textarea></p>
+  <p>Виберіть зображення<br>
+   <input type="file", name="file">
+  </p>
+  <p> Виробник:
+  <select name="Shoe_ManufacturingCompany">
+   <option value="1">Україна</option>
+   <option value="2">Грузія</option>
+   <option value="3">Франція</option>
+   <option value="4">Германія</option>
+   <option value="5">Англія</option>
+   <option value="6">Італія</option>
+  </select>
+ </p>
+ <p> В наявності: <br>
+  Так<input type="radio", name="Shoe_Presence", value="yes">
+  Ні<input type="radio", name="Shoe_Presence", value="no">
+ </p>
+ <p> Колір взуття:
+  <input type="color", name="Shoe_Color">
+ </p>
+ <p> Розміри: <br>
+  35 <input type="checkbox", name="Shoe_Size", value = "35">
+  39 <input type="checkbox", name="Shoe_Size", value = "39"> <br>
+  36 <input type="checkbox", name="Shoe_Size", value = "36">
+  40 <input type="checkbox", name="Shoe_Size", value = "40"> <br>
+  37 <input type="checkbox", name="Shoe_Size", value = "37">
+  41 <input type="checkbox", name="Shoe_Size", value = "41"> <br>
+  38 <input type="checkbox", name="Shoe_Size", value = "38">
+ </p>
+ <button class = "Shoe_Add"> Добавити </button>
+ <button class = "Exit", onclick="ClosePageCreator()"> Вийти </button>
+ </body>
+</html>

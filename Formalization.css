@@ -1,0 +1,17 @@
+
+  <style>
+   hr {
+   border: none; /* Убираем границу */
+   background-color: darkgray; /* Цвет линии */
+   color: whitesmoke; /* Цвет линии для IE6-7 */
+   height: 1px; /* Толщина линии */
+   }
+   p {
+   margin: 0;
+   text-indent: 3ch;
+   font-size: 14pt;
+   }
+   p1 {
+   font-size: 14pt;  
+   }
+  </style>
